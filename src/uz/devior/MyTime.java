@@ -83,6 +83,7 @@ public class MyTime {
             this.second++;
         }else{
             this.second=0;
+            nextMinute();
         }
         return this;
     }
@@ -92,6 +93,7 @@ public class MyTime {
             this.second--;
         }else{
             this.second=59;
+            previousMinute();
         }
         return this;
     }
@@ -101,6 +103,7 @@ public class MyTime {
             this.minute++;
         }else{
             this.minute=0;
+            nextHour();
         }
         return this;
     }
@@ -110,6 +113,7 @@ public class MyTime {
             this.minute--;
         }else{
             this.minute=59;
+            previousHour();
         }
         return this;
     }
